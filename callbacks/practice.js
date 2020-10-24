@@ -144,11 +144,7 @@ uniq(names, function(uniqArr){
 //Code Here 
 function each(arr,cb){
   for ( let i = 0; i < arr.length; i++){
-    let eachIndex = arr.indexOf(arr[i]);
-    for ( let k = 0; k < arr.length; k++){
-      let elem = arr[k]
-      return cb(elem, eachIndex)
-    }
+    return cb(arr[i], i)
   }
   
 }
